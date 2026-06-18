@@ -1,0 +1,333 @@
+{% load static %}
+
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mãos Originárias - Home</title>
+
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+
+    <link rel="stylesheet" href="{% static 'nome_do_app/css/style.css' %}">
+
+
+</head>
+
+<body>
+
+
+<header>
+
+    <h1>Mãos Originárias</h1>
+
+    <ul>
+
+        <li><a href="{% url 'maos_originarias:produto' %}">Produtos</a>
+
+        <li><a href="">Comunidade</a></li>
+
+        <li><a href="">Artesãs</a></li>
+
+        <li><a href="">Blog</a></li>
+
+        <li><a href="{% url 'maos_originarias:login' %}">Login</a></li>
+
+        <li><a href="">Carrinho</a></li>
+
+    </ul>
+
+</header>
+
+
+
+<main>
+
+
+    <div class="banner">
+            <img src="img.png/imagem.png" style="width: 100%; height: auto; display: block;"> 
+
+        <div class="texto-banner">
+            <h2>Artesanato Indígena da Aldeia </h2>
+            <h2>Potiguara Ibirapi de Lagoa Grande</h2>
+            <h3>CEARÁ-MIRIM/RN</h3>
+            <h3>Descubra peças únicas produzidas com alma, sabedoria e matérias-primas naturais.</h3>
+        </div>
+    </div>
+
+
+
+    <!-- CATEGORIAS -->
+
+    <div class="categorias-faixa">
+
+        <h2 class="titulo-categorias">Categorias</h2>
+
+
+
+        <div class="categorias-container">
+
+            <div class="categoria-item">
+
+                <img src="img.png/bio.png">
+
+                <p class="categoria-texto"><a href="">Biojoias</a></p>
+
+            </div>
+
+
+
+            <div class="categoria-item">
+
+                <img src="img.png/ceramica.png">
+
+                <p class="categoria-texto"><a href="">Cerâmica</a></p>
+
+            </div>
+
+
+
+            <div class="categoria-item">
+
+                <img src="img.png/vinho.png">
+
+                <p class="categoria-texto"><a href="">Vinhos</a></p>
+
+            </div>
+
+
+
+            <div class="categoria-item">
+
+                <img src="img.png/petecas.png">
+
+                <p class="categoria-texto"><a href="">Petecas</a></p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- DESTAQUES (AGORA EM CARDS) -->
+
+    <h2 class="titulo-secao">Destaques da semana</h2>
+
+
+
+    <div class="destaques-top">
+
+        <a href="">Ver todos os Produtos →</a>
+
+    </div>
+
+
+
+    <div class="destaques-grid">
+
+
+
+        <div class="produto-card">
+
+            <img src="img.png/colar.png">
+
+            <p class="categoria">BIOJOIA</p>
+
+            <h3>Colar Cobra Coral</h3>
+
+            <p class="preco">R$ 80,00</p>
+
+        </div>
+
+
+
+        <div class="produto-card">
+
+            <img src="img.png/travessa.png">
+
+            <p class="categoria">CERÂMICA</p>
+
+            <h3>Travessa de Barro</h3>
+
+            <p class="preco">R$ 120,00</p>
+
+        </div>
+
+
+
+        <div class="produto-card">
+
+            <img src="img.png/colardois.png">
+
+            <p class="categoria">BIOJOIA</p>
+
+            <h3>Colar Cobra Coral</h3>
+
+            <p class="preco">R$ 75,00</p>
+
+        </div>
+
+
+
+        <div class="produto-card">
+
+            <img src="img.png/cumbuca.png">
+
+            <p class="categoria">CERÂMICA</p>
+
+            <h3>Cumbuca de Barro</h3>
+
+            <p class="preco">R$ 40,00</p>
+
+        </div>
+    </div>
+
+
+
+    <section class="blog-section">
+
+        <h2 class="titulo-secao">Nosso Blog</h2>
+
+        <p class="blog-descricao">
+            Histórias por trás de cada peça, o cotidiano nas aldeias e a importância da preservação das técnicas ancestrais.
+        </p>
+
+        <div class="blog-grid">
+
+            <div class="blog-card">
+                <img src="img.png/mulheres.png" alt="">
+            <div class="blog-conteudo">
+                <div class="blog-categoria">CULTURA</div>
+                <h3>O Renascimento da Cerâmica</h3>
+                <p>
+                    Como novas gerações de artesãs estão resgatando grafismos milenares para fortalecer sua identidade...
+                </p>
+                <a href="">Ler Mais →</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="img.png/sustentabilidade.png" alt="">
+            <div class="blog-conteudo">
+                <div class="blog-categoria">SUSTENTABILIDADE</div>
+                <h3>Manejo Sustentável</h3>
+                <p>
+                    A relação sagrada entre os povos da floresta e as palmeiras que fornecem matéria-prima...
+                </p>
+                <a href="">Ler Mais →</a>
+            </div>
+        </div>
+
+        <div class="blog-card">
+            <img src="img.png/comunidade.png" alt="">
+            <div class="blog-conteudo">
+                <div class="blog-categoria">COMUNIDADE</div>
+                <h3>O Impacto do Comércio Justo</h3>
+                <p>
+                    Relatos reais de como a plataforma está transformando a vida de diversas famílias...
+                </p>
+                <a href="">Ler Mais →</a>
+            </div>
+        </div>
+
+    </div>
+
+
+</section>
+
+
+<section class="avaliacoes">
+
+  <h2>O que nossos clientes dizem</h2>
+    <div class="cards">
+
+    <div class="card-avaliacao">
+        <div class="usuario">
+        <img src="img.png/user.png" alt="Usuário">
+        <span>Maria Silva</span>
+    
+    </div>
+
+    <p>"Produto incrível, feito com muito cuidado e qualidade!"</p>
+    <p>Acari/RN</p>
+  </div>
+
+  <div class="card-avaliacao">
+    <div class="usuario">
+      <img src="img.png/user.png" alt="Usuário">
+      <span>João Souza</span>
+    </div>
+
+    <p>"Entrega rápida e artesanato muito bonito."</p>
+    <p>Ceará-Mirim/RN</p>
+  </div>
+
+  <div class="card-avaliacao">
+    <div class="usuario">
+        <img src="img.png/user.png" alt="Usuário">
+        <span>Matheus Soares</span>
+    </div>
+
+        <p>"Artesanato muito bem produzido! Gostei muito😉👍"</p>
+        <p>Natal/RN</p>
+
+    
+    </div>
+    <div class="card-avaliacao">
+        <div class="usuario">
+            <img src="img.png/user.png" alt="Usuário">
+            <span>Joana Lima</span>
+        </div>
+
+            <p>"Adorei e indiquei para minha familia"</p>
+            <p>Caicó/RN</p>
+    </div>
+    
+    
+
+
+
+</section>
+
+
+
+<footer class="footer">
+
+    <div class="footer-col">
+        <h2>Mãos Originárias</h2>
+        <p>Resgatando saberes ancestrais e gerando impacto socioambiental positivo através do artesanato indígena brasileiro.
+        </p>
+
+        <div class="social">
+            <a href="#">Compartilhar site</a> |
+            <a href="#">E-mail</a>
+        </div>
+    </div>
+
+    <div class="footer-col">
+        <h3>Links Rápidos</h3>
+        <ul>
+            <li>Sobre nós</li>
+            <li>Nossos Parceiros</li>
+            <li>Relatório de Impacto</li>
+            <li>Termos de Uso</li>
+        </ul>
+    </div>
+
+    <div class="footer-col">
+        <h3>Atendimento</h3>
+        <ul>
+            <li>Políticas de Troca</li>
+            <li>Envio e Entrega</li>
+            <li>Contatos</li>
+            <li>Dúvidas Frequentes</li>
+        </ul>
+    </div>
+
+</footer>
+</html>

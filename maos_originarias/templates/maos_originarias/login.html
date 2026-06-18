@@ -1,0 +1,90 @@
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mãos Originárias - Login</title>
+    <link rel="stylesheet" href="{% static 'nome_do_app/css/style.css' %}">
+</head>
+<body>
+
+    <main class="login-container">
+        <div class="login-card">
+            
+            <div class="brand-header">
+                <img src="img.png/mo.png" alt="Logo Mãos Originárias" class="brand-logo">
+                <h1 class="logo-title">MÃOS ORIGINÁRIAS</h1>
+            </div>
+            
+            <p class="subtitle">Bem-vindo de volta à nossa aldeia digital.</p>
+
+            <button class="btn-google">
+                <img src="img.png/google.png" alt="Google Logo" width="18">
+                Continuar com Google
+            </button>
+
+            <div class="divider">
+                <span>OU ACESSE COM E-MAIL</span>
+            </div>
+
+            <form>
+                <div class="input-group">
+                    <label for="email">Login</label>
+                    <input type="email" id="email" placeholder="nome@exemplo.com" required>
+                </div>
+
+                <div class="input-group">
+                    <div class="label-row">
+                        <label for="password">Senha</label>
+                        <a href="#" class="forgot-password">Esqueceu a senha?</a>
+                    </div>
+                    <div class="password-wrapper">
+                        <input type="password" id="password" placeholder="Sua senha" required>
+                        <span class="toggle-password">👁️</span>
+                    </div>
+                </div>
+
+                <div class="keep-connected">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Manter-me conectado</label>
+                </div>
+
+                <button type="submit" class="btn-submit">ENTRAR</button>
+            </form>
+
+            <p class="signup-text">Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-column brand-info">
+            <h3>Mãos Originárias</h3>
+            <p>© 2026 Mãos Originárias.<br>Resgatando saberes, tecendo o futuro.</p>
+        </div>
+        
+        <div class="footer-column">
+            <h4>Sobre</h4>
+            <a href="#">Sobre Nós</a>
+            <a href="#">Artesãs</a>
+            <a href="#">Blog</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Ajuda</h4>
+            <a href="#">Políticas de Troca</a>
+            <a href="#">Envio e Entrega</a>
+            <a href="#">Contatos</a>
+        </div>
+
+        <div class="footer-column newsletter">
+            <h4>Newsletter</h4>
+            <p>Receba histórias e novidades das comunidades.</p>
+            <div class="newsletter-form">
+                <input type="email" placeholder="Seu e-mail">
+                <button type="button">➔</button>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
