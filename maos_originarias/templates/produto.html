@@ -1,13 +1,11 @@
+{% extends 'base.html' %}
 {% load static %}
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mãos Originárias - Cuia de Cerâmica Pintada à Mão</title>
-    <link rel="icon" type="image/x-icon" href="{% static 'maos_originarias/img/favicon.png' %}">
-    <link rel="stylesheet" href="{% static 'maos_originarias/css/style.css' %}">
-</head>
-<body>
+
+{% block title %}
+Produto
+{% endblock %}
+
+{% block content %}
 
   
     <header>
@@ -177,6 +175,4 @@
             © 2026 Mãos Originárias. Resgatando saberes, tecendo o futuro.
         </div>
     </footer>
-
-</body>
-</html>
+{% endblock %}

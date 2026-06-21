@@ -1,25 +1,11 @@
+{% extends 'base.html' %}
 {% load static %}
 
-<html lang="pt-BR">
+{% block title %}
+Home
+{% endblock %}
 
-<head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Mãos Originárias - Home</title>
-
-    <link rel="icon" type="image/x-icon" href="{% static 'maos_originarias/img/favicon.png' %}">
-
-    <link rel="stylesheet" href="{% static 'maos_originarias/css/style.css' %}">
-    
-
-
-</head>
-
-<body>
-
+{% block content %}
 
 <header>
     <div class="logo-wrapper">
@@ -334,6 +320,4 @@
             <li>Dúvidas Frequentes</li>
         </ul>
     </div>
-
-</footer>
-</html>
+{% endblock %}

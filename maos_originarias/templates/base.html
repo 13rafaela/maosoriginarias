@@ -1,0 +1,18 @@
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="icon" type="image/x-icon" href="{% static 'maos_originarias/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'maos_originarias/css/style.css' %}">
+</head>
+<body>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>
