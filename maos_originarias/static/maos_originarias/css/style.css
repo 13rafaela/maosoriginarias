@@ -27,7 +27,11 @@
             padding: 30px 50px;
 
         }
-
+        header img.logo {
+            width: 120px;
+            height: auto;
+            margin-right: 20px;
+        }
 
 
         header h1 {
@@ -77,11 +81,13 @@
 
             background-color: #F9F3EE;
 
-            width: 94%;               
+            width: 100%;   
+            
+            max-width: 1200px;
 
-            padding: 40px 40px;        
+            padding: 30px 40px;        
 
-            margin: 20px 0 40px 0;     
+            margin:  0 auto 20px auto;     
 
         }
 
@@ -1190,4 +1196,27 @@ ul, li {
 a {
     text-decoration: none;
     color: black 
+}
+img {
+    display: block;
+
+}
+.logo-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 15px; /* Altere este valor para controlar a distância exata entre a imagem e o texto */
+}
+
+/* Modifique a regra atual do seu header img.logo */
+header img.logo {
+    width: 40px;
+    height: auto;
+    margin-right: 0; /* Zeramos a margem antiga para controlar apenas pelo 'gap' acima */
+}
+
+/* Garanta que o h1 não tenha margens padrões que possam empurrar o layout */
+header h1 {
+    color: brown;
+    font-size: 20px;
+    margin: 0; 
 }
