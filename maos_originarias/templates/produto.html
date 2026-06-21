@@ -1,0 +1,181 @@
+{% load static %}
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mãos Originárias - Cuia de Cerâmica Pintada à Mão</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'maos_originarias/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'maos_originarias/css/style.css' %}">
+</head>
+<body>
+
+  
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">Mãos Originárias</a>
+            <nav class="nav-links">
+                <a href="#">Produtos</a>
+                <a href="#">Comunidade</a>
+                <a href="#">Artesãs</a>
+                <a href="#">Blog</a>
+                <a href="#" class="icon-link">👤</a>
+                <a href="#" class="icon-link">🛒</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Seção Principal do Produto -->
+    <main class="product-container">
+        <!-- Coluna de Imagens -->
+        <div class="product-images">
+            <div class="main-img">
+                <img src="{% static 'maos_originarias/img/colar.png' %}" alt="Colar Cobra Coral">
+            </div>
+            <div class="thumb-row">
+                <div class="thumb thumb-1">
+                    <img src="{% static 'maos_originarias/img/colar.png' %}" alt="foto 2 do colar">
+                </div>
+                <div class="thumb thumb-2">
+                    <img src="{% static 'maos_originarias/img/colar2.png' %}" alt="foto 3 do colar">
+                </div>
+                <div class="thumb thumb-3">
+                    <img src="{% static 'maos_originarias/img/colar3.png' %}" alt="foto 4 do colar">
+                </div>
+                <div class="thumb thumb-4">
+                    <img src="{% static 'maos_originarias/img/colar4.png' %}" alt="foto 5 do colar"></div>
+            </div>
+        </div>
+
+        <!-- Coluna de Detalhes -->
+        <div class="product-details">
+            <div class="breadcrumbs">Início &gt; Biojoia &gt; Colar Cobra Coral</div>
+            <h1 class="product-title">Colar Cobra Coral</h1>
+            
+            <div class="rating-author">
+                <span class="star">★</span> <strong>4.9</strong> (128 avaliações) &nbsp;|&nbsp; Por <span class="author-link">Comunidade Lagoa Grande</span>
+            </div>
+
+            <div class="price-container">
+                <span class="current-price">R$ 40,00</span>
+                <span class="old-price">R$ 50,00</span>
+            </div>
+
+            <div class="qty-label">Quantidade</div>
+            <div class="qty-selector">
+                <span class="qty-btn">-</span>
+                <span>1</span>
+                <span class="qty-btn">+</span>
+            </div>
+
+            <div class="action-row">
+                <button class="btn-add">Adicionar ao Carrinho</button>
+                <button class="btn-wishlist">♡</button>
+            </div>
+
+            <!-- Card Artesã (CORRIGIDO com tag img) -->
+            <div class="artesa-card">
+                <div class="avatar-circle">
+                    <!-- Substitua esta URL de exemplo pela foto real da Bárbara -->
+                    <img src="{% static 'maos_originarias/img/bab.png' %}" alt="Foto da Bárbara">
+                </div>
+                <div class="artesa-content">
+                    <div class="artesa-name">Bárbara</div>
+                    <div class="artesa-desc">Guardiã das técnicas dos artesanatos.</div>
+                    <a href="#" class="artesa-link">Ver todos os produtos</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Descrição Detalhada -->
+    <section class="description-section">
+        <h2 class="section-title">Descrição Detalhada</h2>
+        <p>Sinta a força, o mistério e a beleza da fauna ancestral materializados numa biojoia de altíssima potência estética. Este colar exclusivo é inteiramente tecido à mão por artesãs detentoras de saberes tradicionais, carregando em cada conta a história, o afeto e a resistência dos povos originários.</p>
+        <p>O design destaca-se pelo contraste marcante e sofisticado entre o vermelho vibrante, o preto profundo e o branco puro — cores que dão vida ao padrão hipnotizante da cobra-coral, um símbolo de proteção, sabedoria e conexão profunda com a terra. Com uma geometria precisa e um acabamento impecável, a peça confere ritmo, movimento e uma elegância étnica única a qualquer visual.</p>
+        <p>Mais do que um acessório, este colar é um manifesto de arte viva, sofisticação sustentável e valorização da cultura ancestral.</p>
+
+        <ul class="specs-list">
+            <li><span class="check-icon">✓</span> <div><strong>Material:</strong> Miçangas.</div></li>
+            <li><span class="check-icon">✓</span> <div><strong>Dimensões:</strong> Diâmetro: 5cm a 7cm.</div></li>
+            <li><span class="check-icon">✓</span> <div><strong>Origem:</strong> Produção ética, sustentável e de comércio justo — Coletivo Mãos Originárias.</div></li>
+        </ul>
+    </section>
+
+    <!-- Recomendações -->
+    <section class="recommendations">
+        <h2 class="section-title">Quem viu este produto, também amou</h2>
+        <div class="rec-grid">
+            <div class="rec-card">
+                <div class="rec-img rec-item-1">
+                    <img src="{% static 'maos_originarias/img/vinho.png' %}" alt="Vinho de Jenipapo">
+                </div>
+                <div class="rec-title">Vinho de Jenipapo</div>
+                <div class="rec-community">100% Natural e Orgânico</div>
+                <div class="rec-price">R$ 60,00</div>
+            </div>
+            <div class="rec-card">
+                <div class="rec-img rec-item-2">
+                    <img src="{% static 'maos_originarias/img/prato.png' %}" alt="Prato Grafite">
+                </div>
+                <div class="rec-title">Prato Grafite</div>
+                <div class="rec-community">Comunidade Potiguara Ibirapi</div>
+                <div class="rec-price">R$ 130,00</div>
+            </div>
+            <div class="rec-card">
+                <div class="rec-img rec-item-3">
+                    <img src="{% static 'maos_originarias/img/trio.png' %}" alt="Trio de Guardiões da Mata">
+                </div>
+                <div class="rec-title">Trio de Guardiões da Mata</div>
+                <div class="rec-community">Comunidade Potiguara Ibirapi</div>
+                <div class="rec-price">R$ 150,00</div>
+            </div>
+            <div class="rec-card">
+                <div class="rec-img rec-item-4">
+                    <img src="{% static 'maos_originarias/img/conjuto.png' %} " alt="Conjunto pulseiras e colar ">
+                </div>
+                <div class="rec-title">Conjunto pulseiras e colar </div>
+                <div class="rec-community">Comunidade Potiguara Ibirapi</div>
+                <div class="rec-price">R$ 100,00</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">Mãos Originárias</div>
+                <div class="footer-text">Resgatando saberes, tecendo o futuro através do comércio justo e ético com povos originários.</div>
+            </div>
+            <div>
+                <div class="footer-heading">Explore</div>
+                <ul class="footer-links">
+                    <li>Sobre Nós</li>
+                    <li>Nossa Missão</li>
+                    <li>Artesãos</li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-heading">Ajuda</div>
+                <ul class="footer-links">
+                    <li>Políticas de Troca</li>
+                    <li>Envio e Entrega</li>
+                    <li>Contatos</li>
+                </ul>
+            </div>
+            <div>
+                <div class="footer-heading">Newsletter</div>
+                <div class="footer-text">Receba histórias e lançamentos exclusivos.</div>
+                <div class="newsletter-box">
+                    <input type="email" class="newsletter-input" placeholder="Seu e-mail">
+                    <button class="newsletter-btn">&gt;</button>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 Mãos Originárias. Resgatando saberes, tecendo o futuro.
+        </div>
+    </footer>
+
+</body>
+</html>

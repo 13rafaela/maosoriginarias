@@ -10,9 +10,10 @@
 
     <title>Mãos Originárias - Home</title>
 
-    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="icon" type="image/x-icon" href="{% static 'maos_originarias/img/favicon.png' %}">
 
-    <link rel="stylesheet" href="{% static 'nome_do_app/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'maos_originarias/css/style.css' %}">
+    
 
 
 </head>
@@ -48,7 +49,7 @@
 
 
     <div class="banner">
-            <img src="img.png/imagem.png" style="width: 100%; height: auto; display: block;"> 
+            <img src="{% static 'maos_originarias/img/imagem.png' %}" style="width: 100%; height: auto; display: block;"> 
 
         <div class="texto-banner">
             <h2>Artesanato Indígena da Aldeia </h2>
@@ -72,7 +73,7 @@
 
             <div class="categoria-item">
 
-                <img src="img.png/bio.png">
+                <img src="{% static 'maos_originarias/img/bio.png' %}">
 
                 <p class="categoria-texto"><a href="">Biojoias</a></p>
 
@@ -82,7 +83,7 @@
 
             <div class="categoria-item">
 
-                <img src="img.png/ceramica.png">
+                <img src="{% static 'maos_originarias/img/ceramica.png' %}">
 
                 <p class="categoria-texto"><a href="">Cerâmica</a></p>
 
@@ -92,7 +93,7 @@
 
             <div class="categoria-item">
 
-                <img src="img.png/vinho.png">
+                <img src="{% static 'maos_originarias/img/vinho.png' %}">
 
                 <p class="categoria-texto"><a href="">Vinhos</a></p>
 
@@ -102,7 +103,7 @@
 
             <div class="categoria-item">
 
-                <img src="img.png/petecas.png">
+                <img src="{% static 'maos_originarias/img/petecas.png' %}">
 
                 <p class="categoria-texto"><a href="">Petecas</a></p>
 
@@ -134,7 +135,7 @@
 
         <div class="produto-card">
 
-            <img src="img.png/colar.png">
+            <img src="{% static 'maos_originarias/img/colar.png' %}">
 
             <p class="categoria">BIOJOIA</p>
 
@@ -148,7 +149,7 @@
 
         <div class="produto-card">
 
-            <img src="img.png/travessa.png">
+            <img src="{% static 'maos_originarias/img/travessa.png' %}">
 
             <p class="categoria">CERÂMICA</p>
 
@@ -162,11 +163,11 @@
 
         <div class="produto-card">
 
-            <img src="img.png/colardois.png">
+            <img src="{% static 'maos_originarias/img/colardois.png' %}">
 
             <p class="categoria">BIOJOIA</p>
 
-            <h3>Colar Cobra Coral</h3>
+            <li><a href="{% url 'maos_originarias:produto' %}">Colar Cobra Coral</a></li>
 
             <p class="preco">R$ 75,00</p>
 
@@ -176,7 +177,7 @@
 
         <div class="produto-card">
 
-            <img src="img.png/cumbuca.png">
+            <img src="{% static 'maos_originarias/img/cumbuca.png' %}">
 
             <p class="categoria">CERÂMICA</p>
 
@@ -200,7 +201,7 @@
         <div class="blog-grid">
 
             <div class="blog-card">
-                <img src="img.png/mulheres.png" alt="">
+                <img src="{% static 'maos_originarias/img/mulheres.png' %}" alt="">
             <div class="blog-conteudo">
                 <div class="blog-categoria">CULTURA</div>
                 <h3>O Renascimento da Cerâmica</h3>
@@ -212,7 +213,7 @@
         </div>
 
         <div class="blog-card">
-            <img src="img.png/sustentabilidade.png" alt="">
+            <img src="{% static 'maos_originarias/img/sustentabilidade.png' %}" alt="">
             <div class="blog-conteudo">
                 <div class="blog-categoria">SUSTENTABILIDADE</div>
                 <h3>Manejo Sustentável</h3>
@@ -224,7 +225,7 @@
         </div>
 
         <div class="blog-card">
-            <img src="img.png/comunidade.png" alt="">
+            <img src="{% static 'maos_originarias/img/comunidade.png' %}" alt="">
             <div class="blog-conteudo">
                 <div class="blog-categoria">COMUNIDADE</div>
                 <h3>O Impacto do Comércio Justo</h3>
@@ -248,7 +249,7 @@
 
     <div class="card-avaliacao">
         <div class="usuario">
-        <img src="img.png/user.png" alt="Usuário">
+        <img src="{% static 'maos_originarias/img/user.png' %}" alt="Usuário">
         <span>Maria Silva</span>
     
     </div>
@@ -259,7 +260,7 @@
 
   <div class="card-avaliacao">
     <div class="usuario">
-      <img src="img.png/user.png" alt="Usuário">
+      <img src="{% static 'maos_originarias/img/user.png' %}" alt="Usuário">
       <span>João Souza</span>
     </div>
 
@@ -269,7 +270,7 @@
 
   <div class="card-avaliacao">
     <div class="usuario">
-        <img src="img.png/user.png" alt="Usuário">
+        <img src="{% static 'maos_originarias/img/user.png' %}" alt="Usuário">
         <span>Matheus Soares</span>
     </div>
 
@@ -280,7 +281,7 @@
     </div>
     <div class="card-avaliacao">
         <div class="usuario">
-            <img src="img.png/user.png" alt="Usuário">
+            <img src="{% static 'maos_originarias/img/user.png' %}" alt="Usuário">
             <span>Joana Lima</span>
         </div>
 

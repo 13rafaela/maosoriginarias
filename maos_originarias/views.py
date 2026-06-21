@@ -1,9 +1,10 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def home(request):
-    return HttpResponse("esta é a tela inicial do app")
+    return render(request, 'home.html')
+
 def login(request):
-    return HttpResponse("esta é a tela de login do app")
+    return render(request, 'login.html')
+
 def produto(request):
-    return HttpResponse("esta é a tela do produto do app")
+    return render(request, 'produto.html')
