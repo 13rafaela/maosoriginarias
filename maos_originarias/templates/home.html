@@ -52,7 +52,7 @@ Home
 
 
 
-    <!-- CATEGORIAS -->
+
 
     <div class="categorias-faixa">
 
@@ -106,8 +106,6 @@ Home
 
 
 
-    <!-- DESTAQUES (AGORA EM CARDS) -->
-
     <h2 class="titulo-secao">Destaques da semana</h2>
 
 
@@ -120,65 +118,34 @@ Home
 
 
 
-    <div class="destaques-grid">
+   <div class="destaques-grid">
 
+    {% if produtos %}
 
+        {% for produto in produtos %}
 
-        <div class="produto-card">
+            <div class="produto-card">
 
-            <img src="{% static 'maos_originarias/img/colar.png' %}">
+                <img src="{% static produto.imagem %}" alt="{{ produto.nome }}">
 
-            <p class="categoria">BIOJOIA</p>
+                <p class="categoria">{{ produto.categoria }}</p>
 
-            <h3>Colar Cobra Coral</h3>
+                <h3>{{ produto.nome }}</h3>
 
-            <p class="preco">R$ 80,00</p>
+                <p class="preco">{{ produto.preco }}</p>
 
-        </div>
+            </div>
 
+        {% endfor %}
 
+    {% else %}
 
-        <div class="produto-card">
+        <p>Nenhum produto encontrado.</p>
 
-            <img src="{% static 'maos_originarias/img/travessa.png' %}">
+    {% endif %}
 
-            <p class="categoria">CERÂMICA</p>
-
-            <h3>Travessa de Barro</h3>
-
-            <p class="preco">R$ 120,00</p>
-
-        </div>
-
-
-
-        <div class="produto-card">
-
-            <img src="{% static 'maos_originarias/img/colardois.png' %}">
-
-            <p class="categoria">BIOJOIA</p>
-
-            <li><a href="{% url 'maos_originarias:produto' %}">Colar Cobra Coral</a></li>
-
-            <p class="preco">R$ 75,00</p>
-
-        </div>
-
-
-
-        <div class="produto-card">
-
-            <img src="{% static 'maos_originarias/img/cumbuca.png' %}">
-
-            <p class="categoria">CERÂMICA</p>
-
-            <h3>Cumbuca de Barro</h3>
-
-            <p class="preco">R$ 40,00</p>
-
-        </div>
-    </div>
-
+</div>
+</div>
 
 
     <section class="blog-section">
