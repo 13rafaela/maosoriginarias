@@ -4,6 +4,6 @@ Este é um projeto criado para o curso Asas para o Futuro do IFRN que tem como p
 #**INTEGRANTES:** RAFAELA, MICAELE, JOYCE MARIA
 
 ## PARA RODAR:
-#**1-**Copie o link deste repositório no github e no terminal digite:
+**1-**Copie o link deste repositório no github e no terminal digite:
         git clone link deste repositório
 
