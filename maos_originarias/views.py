@@ -74,3 +74,5 @@ def produto(request):
     }
 
     return render(request, 'produto.html', context)
+def artesas(request):
+    return render(request,'artesas.html')

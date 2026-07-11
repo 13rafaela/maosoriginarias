@@ -1187,15 +1187,13 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-/* Remove a bolinha do início da lista */
 ul, li {
     list-style: none;
 }
 
-/* Remove o sublinhado do link */
 a {
     text-decoration: none;
-    color: black 
+    color: white
 }
 img {
     display: block;
@@ -1204,19 +1202,262 @@ img {
 .logo-wrapper {
     display: inline-flex;
     align-items: center;
-    gap: 15px; /* Altere este valor para controlar a distância exata entre a imagem e o texto */
+    gap: 15px; 
 }
 
-/* Modifique a regra atual do seu header img.logo */
 header img.logo {
     width: 40px;
     height: auto;
-    margin-right: 0; /* Zeramos a margem antiga para controlar apenas pelo 'gap' acima */
+    margin-right: 0; 
 }
 
-/* Garanta que o h1 não tenha margens padrões que possam empurrar o layout */
 header h1 {
     color: brown;
     font-size: 20px;
     margin: 0; 
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F6F0EA;
+    color: #4B3621;
+}
+
+/* ============================
+   PERFIL DO ARTESÃO
+============================ */
+
+.perfil-artesao{
+    padding: 60px 10%;
+}
+
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.cabecalho img{
+    width: 260px;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 8px solid #C88C5A;
+    box-shadow: 0 8px 20px rgba(0,0,0,.15);
+    transition: .3s;
+}
+
+.cabecalho img:hover{
+    transform: scale(1.03);
+}
+
+.info{
+    flex: 1;
+    min-width: 300px;
+}
+
+.info h1{
+    font-family: Georgia, serif;
+    font-size: 42px;
+    color: #6D4C41;
+    margin-bottom: 10px;
+}
+
+.aldeia{
+    color: #9C6644;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.descricao{
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+/* ============================
+   HISTÓRIA
+============================ */
+
+.historia{
+    padding: 60px 10%;
+}
+
+.historia h2{
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #6D4C41;
+    margin-bottom: 20px;
+}
+
+.historia p{
+    line-height: 1.8;
+    font-size: 17px;
+}
+
+/* ============================
+   ESPECIALIDADES
+============================ */
+
+.especialidades{
+    padding: 60px 10%;
+    background: #EFE3D7;
+}
+
+.especialidades h2{
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #6D4C41;
+    margin-bottom: 30px;
+}
+
+.lista{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item{
+    background: white;
+    padding: 18px 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.item:hover{
+    transform: translateY(-5px);
+}
+
+/* ============================
+   PRODUTOS
+============================ */
+
+.produtos{
+    padding: 60px 10%;
+}
+
+.produtos h2{
+    font-family: Georgia, serif;
+    font-size: 34px;
+    color: #6D4C41;
+    margin-bottom: 30px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.card{
+    width: 280px;
+    background: white;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    transition: .3s;
+}
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3{
+    margin: 15px;
+    color: #6D4C41;
+    font-size: 22px;
+}
+
+.card p{
+    margin: 0 15px 20px;
+    color: #A0522D;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* ============================
+   CONTATO
+============================ */
+
+.contato{
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.contato h2{
+    margin-bottom: 30px;
+    font-family: Georgia, serif;
+    font-size: 34px;
+}
+
+.contato a{
+    display: inline-block;
+    background: #C88C5A;
+    color: white;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 35px;
+    font-size: 18px;
+    transition: .3s;
+}
+
+.contato a:hover{
+    background: #A86B40;
+}
+
+/* ============================
+   RESPONSIVIDADE
+============================ */
+
+@media (max-width: 768px){
+
+    .cabecalho{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .info{
+        min-width: auto;
+    }
+
+    .info h1{
+        font-size: 34px;
+    }
+
+    .historia h2,
+    .especialidades h2,
+    .contato h2{
+        font-size: 18px;
+    }
+
+    .cabecalho img{
+        width: 220px;
+        height: 220px;
+    }
+
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        max-width: 350px;
+    }
 }
